@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `fastapi-sso` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install fastapi-sso
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install fastapi-sso
 ```
 
-It is possible to list all of the versions of `fastapi-sso` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add fastapi-sso
+# for installing globally
+pixi global install fastapi-sso
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `fastapi-sso` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search fastapi-sso --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search fastapi-sso --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search fastapi-sso --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds fastapi-sso --channel conda-forge
 # List dependencies of `fastapi-sso`:
 mamba repoquery depends fastapi-sso --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
